@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>     
+    <meta charset="UTF-8">     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <title>Document</title>     
+    <link rel="stylesheet" href="styles.css">     
+    <script src="./script.js"></script> 
+</head>     
+<body>         
+    <div class="container">             
+        <header class="header">                 
+            <h1>CoinWatchdog</h1>                 
+            <nav>                     
+                <ul class="nav-list">                         
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>                         
+                    <li class="nav-item"><a href="https://coinmarketcap.com/rankings/exchanges/" class="nav-link">exchange</a></li>                         
+                    <li class="nav-item"><a href="https://coinmarketcap.com/community/" class="nav-link">community</a></li>                         
+                    <li class="nav-item"><a href="https://coinmarketcap.com/portfolio-tracker/" class="nav-link">portfolio</a></li>                         
+                    <li class="nav-item"><a href="https://coinmarketcap.com/converter/" class="nav-link">Converter</a></li>                     
+                </ul>                 
+            </nav>             
+        </header>                  
+        <main class="main-content">                 
+            <h2>Live Cryptocurrency Prices</h2>                     
+            <div class="table">                     
+                <table id="cryptoTable">                         
+                    <thead>                             
+                        <tr>                                 
+                            <th>Name</th>                                 
+                            <th>Symbol</th>                                 
+                            <th>Price (USD)</th>                                 
+                            <th>Market Cap (USD)</th>                                 
+                            <th>24h Volume (USD)</th>                                 
+                            <th>Circulating Supply</th>                                 
+                            <th>CMC Rank</th>                                 
+                            <th>Total Supply</th>                                 
+                            <th>1h % Change</th>                                 
+                            <th>24h % Change</th>                                 
+                            <th>7d % Change</th>                             
+                        </tr>                         
+                    </thead>                         
+                    <tbody></tbody>                     
+                </table>                                          
+                <div id="pagination"></div>                     
+            </div>                     
+            <!-- searchbar here -->                     
+            <div id="search-container">                         
+                <input type="text" id="search" placeholder="Search cryptocurrency..." onkeyup="showSuggestions()" />                         
+                <div id="suggestions" class="suggestions"></div>                     
+            </div>                                          
+            <div class="iframe-container">                         
+                <iframe id="panel1" width="450" height="200" frameborder="0"></iframe>                         
+                <iframe id="panel2" width="450" height="200" frameborder="0"></iframe>                         
+                <iframe id="panel3" width="450" height="200" frameborder="0"></iframe>                     
+            </div>
+        </main>
+    </div>
+</body> 
+</html>
